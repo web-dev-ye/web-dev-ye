@@ -1,4 +1,10 @@
 title: اسم موقعك
-description: وصف لموقعك
+description: وصف الموقع
 lang: ar
 theme: minima
+# Theme-specific settings
+
+# If you want to link only specific pages in your header, use this and add the path to the pages
+# in order as they should show up.
+header_pages:
+  - about.md
