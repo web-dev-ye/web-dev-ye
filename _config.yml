@@ -8,7 +8,7 @@ description: >-
   results) and in your feed.xml site description.
 baseurl: ''
 #show_dir_listing: false
-url: ''
+url: https://web-dev-ye.github.io
 twitter_username: MohammedBeshr97
 github_username: mohammedbeshr0
 #lang: "ar_SA"
