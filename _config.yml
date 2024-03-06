@@ -1,10 +1,108 @@
-title: اسم موقعك
-description: وصف الموقع
-lang: ar
-theme: minima
-# Theme-specific settings
-
-# If you want to link only specific pages in your header, use this and add the path to the pages
-# in order as they should show up.
-header_pages:
-  - about.md
+title: Developer Yemen
+masthead_title: "My Custom Title"
+logo: "assets/images/MB-FAV.svg"
+email: your@example.com
+description: >-
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+baseurl: ''
+#show_dir_listing: false
+url: ''
+twitter_username: MohammedBeshr97
+github_username: mohammedbeshr0
+#lang: "ar_SA"
+#language: ar
+locale: "ar"
+theme: minimal-mistakes-jekyll
+#breadcrumbs: true
+#search: true
+timezone: Asia/Riyadh
+teaser: assets/images/android-chrome-512x512.png
+# head_scripts:
+#  - https://code.jquery.com/jquery-3.2.1.min.js
+#  - /assets/js/your-custom-head-script.js
+#search_provider: algolia
+# Hide Feed Header and footer
+atom_feed:
+  hide: true
+author:
+  name: "Mohammed Beshr"
+comments:
+  provider: "facebook"
+  facebook:
+    appid: # optional
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-archives
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      permalink: /:title/
+      show_date: true
+      paginate: null
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: single
+      author_profile: 'true'
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /cat/:name/
+    tag: /tags/:name/
+# Site Footer'
+footer:
+  links:
+    - label: X
+      icon: fa-brands fa-x-twitter
+      url: 'https://twitter.com/MohammedBeshr97'
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: 'https://github.com/mohammedbeshr0'
+    - label: Instagram
+      icon: fab fa-brands fa-square-instagram
+      url: 'https://instagram.com/mohammedbeshrye'
+      name: "Mohammed Beshr"
+include:
+  - .htaccess
+  - _pages
+#gems:
+#- jekyll-language-plugin
+social:
+  type:  # Person or Organization (defaults to Person)
+  name: Mohammed Beshr
+ # If the user or organization name differs from the site's name
+  links:
+    - "https://twitter.com/MohammedBeshr97"
+    - "https://www.facebook.com/MohammedBeshr0"
+    - "https://instagram.com/mohammedbeshrye"
+#    - "https://www.linkedin.com/in/yourprofile"
